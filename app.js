@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: ['https://eloquent-gecko-6441f6.netlify.app/']  // TODO
+    origin: [process.env.FRONTEND]  // TODO
   }));
 app.use(express.json());
 
